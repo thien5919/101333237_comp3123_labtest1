@@ -24,7 +24,7 @@ if (fs.existsSync(dir)) {
                 });
             });
             //remove Logs directory
-            fs.rmdir(dir,{recursive:true}, err => {
+            fs.rm(dir,{recursive:true}, err => {
                 if (err) {
                     console.error(err);
                 }
